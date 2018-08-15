@@ -1,0 +1,58 @@
+<html:5>
+
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+            
+            @media screen and (max-width:600px) {
+                .konten {
+                    background-color: blue;
+                    grid-gap: 1px;
+                }
+            }
+            
+            @media screen and (min-width:600px) {
+                .konten {
+                    background-color: blue;
+                    grid-gap: 1px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: "area1 area1 area1" ". area2 area2" ". area2 area2"
+                }
+                #e8 {
+                    grid-area: area1;
+                }
+                #e7 {
+                    grid-area: area2;
+                }
+            }
+            
+            .konten div {
+                background-color: lightcyan;
+                padding: 10px;
+            }
+            
+            .konten div:nth-child(even) {
+                background-color: lightpink;
+                padding: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="konten">
+            <div id="e1">1</div>
+            <div id="e2">2</div>
+            <div id="e3">3</div>
+            <div id="e4">4</div>
+            <div id="e5">5</div>
+            <div id="e6">6</div>
+            <div id="e7">7</div>
+            <div id="e8">8</div>
+            <div id="e9">9</div>
+        </div>
+    </body>
+</html:5>
